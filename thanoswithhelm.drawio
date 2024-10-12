@@ -35,7 +35,7 @@
           <mxGeometry x="203" y="427" width="168" height="52" as="geometry" />
         </mxCell>
         <mxCell id="6wUFvjtU5iQwAHVgsIrm-11" value="End User" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="226" y="529" width="122" height="52" as="geometry" />
+          <mxGeometry x="226" y="585" width="122" height="52" as="geometry" />
         </mxCell>
         <mxCell id="6wUFvjtU5iQwAHVgsIrm-12" value="Remote Write" style="curved=1;startArrow=none;endArrow=block;exitX=0.5;exitY=1;entryX=0.21;entryY=0;rounded=0;" edge="1" parent="1" source="6wUFvjtU5iQwAHVgsIrm-4" target="6wUFvjtU5iQwAHVgsIrm-5">
           <mxGeometry relative="1" as="geometry">
@@ -92,6 +92,9 @@
           <mxGeometry relative="1" as="geometry">
             <Array as="points" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="6wUFvjtU5iQwAHVgsIrm-20" value="" style="shape=image;verticalLabelPosition=bottom;labelBackgroundColor=default;verticalAlign=top;aspect=fixed;imageAspect=0;image=https://particule.io/images/prometheus-thanos/thanos-query-ui.png;" vertex="1" parent="1">
+          <mxGeometry x="390" y="585" width="1200" height="691" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
