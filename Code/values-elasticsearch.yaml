@@ -3,23 +3,23 @@ nodeGroup: "master"
 
 roles:
     master: true
-    ingest: true
-    data: true
+    ingest: false  # Master nodes should typically not handle ingest or data.
+    data: false
 
 replicas: 1
 
-esJavaOpts: "-Xmx1g -Xms1g"
+esJavaOpts: "-Xmx1g -Xms1g"  # Adjust based on your memory requirements.
 
 resources:
     requests:
-        cpu: "100m"
-        memory: "1Gi"
+        cpu: "200m"  # Slight increase for more stability.
+        memory: "2Gi"  # Increased memory for better performance.
     limits:
         cpu: "1000m"
-        memory: "1Gi"
+        memory: "2Gi"
 
 volumeClaimTemplate:
     accessModes: [ "ReadWriteOnce" ]
     resources:
         requests:
-            storage: 5Gi
+            storage: 10Gi  # Increase storage to handle potential data growth.
