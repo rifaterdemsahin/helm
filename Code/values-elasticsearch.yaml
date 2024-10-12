@@ -2,24 +2,24 @@ clusterName: "elasticsearch"
 nodeGroup: "master"
 
 roles:
-    master: true
-    ingest: false  # Master nodes should typically not handle ingest or data.
-    data: false
+  master: "true"
+  ingest: "false"
+  data: "false"
 
 replicas: 1
 
-esJavaOpts: "-Xmx1g -Xms1g"  # Adjust based on your memory requirements.
+esJavaOpts: "-Xmx1g -Xms1g"
 
 resources:
-    requests:
-        cpu: "200m"  # Slight increase for more stability.
-        memory: "2Gi"  # Increased memory for better performance.
-    limits:
-        cpu: "1000m"
-        memory: "2Gi"
+  requests:
+    cpu: "200m"
+    memory: "2Gi"
+  limits:
+    cpu: "1000m"
+    memory: "2Gi"
 
 volumeClaimTemplate:
-    accessModes: [ "ReadWriteOnce" ]
-    resources:
-        requests:
-            storage: 10Gi  # Increase storage to handle potential data growth.
+  accessModes: [ "ReadWriteOnce" ]
+  resources:
+    requests:
+      storage: 10Gi
